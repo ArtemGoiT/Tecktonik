@@ -99,22 +99,38 @@ myBook.displayInfo();
 myBook.readBook();
 myBook.markAsUnread();
 // ???????????????????????Задача4??????????????????????????
+// Ви створили клас Employee, який представляє робітника в компанії. 
+// Однак ви помітили, що в деяких методах відсутні вказівники this.
+// Твоя задача - вставити відсутні this у потрібні місця.
+
+
 class Employee{
     constructor(name, position, salary) {
-        name = name;
-        position = position;
-        salary = salary;
+        this.name = name;
+        this.position = position;
+        this.salary = salary;
         this.isWorking = false;
     }
     startWork(){
-            isWorking = true;
-            console.log(`${name} has started working as a ${position}`);
+            this.isWorking = true;
+            console.log(`${this.name} has started working as a ${this.position}`);
         }
    
     stopWork() {
-        isWorking = false; 
-        console.log('Name: ${name});
+        this.isWorking = false; 
+        console.log(`${this.name}, has stopped this.isWorking.`);
     }
-    }
-    
+    displayInfo() {
+    console.log(`Name: ${this.name}, Position: ${this.position}, Salary: $${this.salary}`);
+}
+}
+    // Виклики методів
+const employee1 = new Employee('John Doe', 'Software Developer', 70000);
+employee1.startWork();
+employee1.displayInfo();
+employee1.stopWork();
 
+const employee2 = new Employee('Jane Smith', 'Graphic Designer', 60000);
+employee2.startWork();
+employee2.displayInfo();
+employee2.stopWork();
