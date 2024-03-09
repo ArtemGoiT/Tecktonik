@@ -34,3 +34,12 @@ console.log(lastListItem);
 const listItems = list.children;
 console.log(listItems);
 
+
+
+
+
+
+
+
+
+
