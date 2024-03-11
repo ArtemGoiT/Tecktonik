@@ -17,26 +17,29 @@
 // console.log(firstMenuItem);
 
 
-console.log(document);
+// console.log(document);
+// 
+// const body = document.body;
+// console.log(body);
+// 
+// const list = document.querySelector(".list");
+// console.log(list);
+// 
+// const firstListItem = list.firstElementChild;
+// console.log(firstListItem);
+// 
+// const lastListItem = list.lastElementChild;
+// console.log(lastListItem);
+// 
+// const listItems = list.children;
+// console.log(listItems);
+// 
 
-const body = document.body;
-console.log(body);
+const _ = require('lodash');
 
-const list = document.querySelector(".list");
-console.log(list);
-
-const firstListItem = list.firstElementChild;
-console.log(firstListItem);
-
-const lastListItem = list.lastElementChild;
-console.log(lastListItem);
-
-const listItems = list.children;
-console.log(listItems);
-
-
-
-
+// Пример использования
+const result = _.map([1, 2, 3], (num) => num * 2);
+console.log(result); // Должен выводить [2, 4, 6]
 
 
 
