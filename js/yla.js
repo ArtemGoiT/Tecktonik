@@ -1,3 +1,28 @@
+import _ from 'https://cdn.jsdelivr.net/npm/lodash'; // Используйте CDN-ссылку на lodash
+
+
+// Используйте функции Lodash, например:
+const resultArray = _.map([1, 2, 3], (num) => num * 2);
+console.log(resultArray); // [2, 4, 6]
+
+
+
+
+
+
+
+
+
+
+
+// Ваш код с использованием Lodash
+// Замените на актуальную версию
+
+
+
+
+
+
 // Первый кодевар на пример меню красного цвета
 
 
@@ -35,11 +60,9 @@
 // console.log(listItems);
 // 
 
-const _ = require('lodash');
 
-// Пример использования
-const result = _.map([1, 2, 3], (num) => num * 2);
-console.log(result); // Должен выводить [2, 4, 6]
+
+
 
 
 
