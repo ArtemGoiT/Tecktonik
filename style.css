@@ -1,0 +1,31 @@
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+.gellery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: auto;
+  padding: 24px 156px 156px;
+  justify-content: center;
+  max-width: 1128px;
+}
+
+.gellery-image {
+  display: block;
+  width: 360px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
